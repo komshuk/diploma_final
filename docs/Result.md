@@ -65,6 +65,9 @@
 ### Отчет Allure о прохождении автоматизированного тестирования
 ![изображение](https://github.com/komshuk/diploma_final/assets/88716968/3d79f32f-7a90-4b2f-9eda-6dc7c8a91f40)
 
+### Архив с Allure отчетом
+https://github.com/komshuk/diploma_final/blob/master/allure-results.7z
+
 ### Чек-лист
 https://github.com/komshuk/diploma_final/blob/master/docs/Check.xlsx
 
