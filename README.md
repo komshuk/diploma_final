@@ -13,7 +13,7 @@
 
 ## Начало работы
 1. Открыть git bash 
-1. Выполнить команду: git clone (https://github.com/komshuk/diploma_final)
+1. Выполнить команду: git clone https://github.com/komshuk/diploma_final
 
 ### Prerequisites
 1. система контроля версий Git
