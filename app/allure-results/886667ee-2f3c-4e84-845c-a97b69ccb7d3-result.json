@@ -1,0 +1,65 @@
+{
+    "name": "testShouldOpenPageWithThematicArticles",
+    "start": 1713538635482,
+    "stop": 1713538639472,
+    "stage": "finished",
+    "description": "Должна открыться страница с тематическими статьями",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "886667ee-2f3c-4e84-845c-a97b69ccb7d3",
+    "historyId": "2bd9424ac23d23f868f90133ab942e2d",
+    "fullName": "ru.iteco.fmhandroid.ui.ArticleTest.testShouldOpenPageWithThematicArticles",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.ArticleTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "testShouldOpenPageWithThematicArticles"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.ArticleTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(561)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "epic",
+            "value": "Тематические статьи"
+        },
+        {
+            "name": "feature",
+            "value": "Просмотр тематических статей"
+        },
+        {
+            "name": "severity",
+            "value": "normal"
+        }
+    ]
+}

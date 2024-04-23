@@ -1,0 +1,65 @@
+{
+    "name": "testShouldLog1InAndShowTheMainScreenAndLogOut",
+    "start": 1713884119572,
+    "stop": 1713884130817,
+    "stage": "finished",
+    "description": "Должна создаться новость c указанной темой в панели управления новостей",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "a7b41f32-3aa7-4cf6-806f-457cf4877ff2",
+    "historyId": "5c2263d5bb7b9782fdb5734426d38923",
+    "fullName": "ru.iteco.fmhandroid.ui.NewsTest.testShouldLog1InAndShowTheMainScreenAndLogOut",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.NewsTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "testShouldLog1InAndShowTheMainScreenAndLogOut"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.NewsTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(1272)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "epic",
+            "value": "Новости"
+        },
+        {
+            "name": "feature",
+            "value": "Успешное создание новости"
+        },
+        {
+            "name": "severity",
+            "value": "critical"
+        }
+    ]
+}

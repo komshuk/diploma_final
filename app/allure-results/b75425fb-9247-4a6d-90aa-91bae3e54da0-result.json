@@ -1,0 +1,78 @@
+{
+    "name": "testShouldNewsBeDeletedAfterDeletion",
+    "start": 1713878199299,
+    "stop": 1713878217288,
+    "stage": "finished",
+    "description": "После удаления новости c указанной темой не должно быть в панели управления новостей",
+    "descriptionHtml": null,
+    "status": "broken",
+    "statusDetails": {
+        "message": "Failed to get key events for string Нужна помощь (i.e. current IME does not understand how to translate the string into key events). As a workaround, you can use replaceText action to set the text directly in the EditText field.",
+        "trace": "java.lang.RuntimeException: Failed to get key events for string Нужна помощь (i.e. current IME does not understand how to translate the string into key events). As a workaround, you can use replaceText action to set the text directly in the EditText field.\n\tat androidx.test.espresso.base.UiControllerImpl.injectString(UiControllerImpl.java:12)\n\tat androidx.test.espresso.action.TypeTextAction.perform(TypeTextAction.java:9)\n\tat androidx.test.espresso.ViewInteraction$SingleExecutionViewAction.perform(ViewInteraction.java:2)\n\tat androidx.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:22)\n\tat androidx.test.espresso.ViewInteraction.access$100(ViewInteraction.java:1)\n\tat androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:2)\n\tat androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:1)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat android.os.Handler.handleCallback(Handler.java:883)\n\tat android.os.Handler.dispatchMessage(Handler.java:100)\n\tat android.os.Looper.loop(Looper.java:214)\n\tat android.app.ActivityThread.main(ActivityThread.java:7356)\n\tat java.lang.reflect.Method.invoke(Native Method)\n\tat com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)\n\tat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)\n"
+    },
+    "steps": [
+    ],
+    "attachments": [
+        {
+            "source": "9159cfa2-1514-48c1-8899-53986544c729-attachment.png",
+            "name": "1713878199341",
+            "type": "image/png"
+        },
+        {
+            "source": "36af9883-75d9-41d8-ae04-752c2b2a3f23-attachment.png",
+            "name": "failure",
+            "type": "image/png"
+        }
+    ],
+    "parameters": [
+    ],
+    "uuid": "b75425fb-9247-4a6d-90aa-91bae3e54da0",
+    "historyId": "c3372be36b2f6abe9fc10a2ba35f6a70",
+    "fullName": "ru.iteco.fmhandroid.ui.NewsTest.testShouldNewsBeDeletedAfterDeletion",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.NewsTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "testShouldNewsBeDeletedAfterDeletion"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.NewsTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(807)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "epic",
+            "value": "Новости"
+        },
+        {
+            "name": "feature",
+            "value": "Удаление новости"
+        },
+        {
+            "name": "severity",
+            "value": "normal"
+        }
+    ]
+}

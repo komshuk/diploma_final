@@ -1,0 +1,65 @@
+{
+    "name": "testShouldStayOnNewsCreationScreenWhenCreatingNewsWithEmptyFields",
+    "start": 1713876051174,
+    "stop": 1713876058040,
+    "stage": "finished",
+    "description": "При создании новости c пустыми полями должны появляться иконки с ошибкой и toast c текстом",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "cdf29f4d-28fc-4552-9840-5eb65eb29d70",
+    "historyId": "32761721fe36ec964d459ebda3ece755",
+    "fullName": "ru.iteco.fmhandroid.ui.NewsTest.testShouldStayOnNewsCreationScreenWhenCreatingNewsWithEmptyFields",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.NewsTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "testShouldStayOnNewsCreationScreenWhenCreatingNewsWithEmptyFields"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.NewsTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(502)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "epic",
+            "value": "Новости"
+        },
+        {
+            "name": "feature",
+            "value": "Создание новости с пустыми полями"
+        },
+        {
+            "name": "severity",
+            "value": "critical"
+        }
+    ]
+}

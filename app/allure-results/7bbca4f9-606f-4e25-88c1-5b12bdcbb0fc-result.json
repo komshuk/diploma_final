@@ -1,0 +1,81 @@
+{
+    "name": "testShouldLog1InAndShowTheMainScreenAndLogOut",
+    "start": 1713538722325,
+    "stop": 1713538773474,
+    "stage": "finished",
+    "description": "Должна создаться новость c указанной темой в панели управления новостей",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Нажатие на кнопку Добавить новость",
+            "start": 1713538736735,
+            "stop": 1713538736735,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "7bbca4f9-606f-4e25-88c1-5b12bdcbb0fc",
+    "historyId": "5c2263d5bb7b9782fdb5734426d38923",
+    "fullName": "ru.iteco.fmhandroid.ui.NewsTest.testShouldLog1InAndShowTheMainScreenAndLogOut",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.NewsTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "testShouldLog1InAndShowTheMainScreenAndLogOut"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.NewsTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(561)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "epic",
+            "value": "Новости"
+        },
+        {
+            "name": "feature",
+            "value": "Успешное создание новости"
+        },
+        {
+            "name": "severity",
+            "value": "critical"
+        }
+    ]
+}
