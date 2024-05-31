@@ -1,0 +1,145 @@
+{
+    "name": "testShouldRemainOnTheMainScreenWhenEnteringInTheLoginFieldCharactersInCyrillic",
+    "start": 1717189220646,
+    "stop": 1717189224530,
+    "stage": "finished",
+    "description": "После авторизации с введением в поле логин символов на кириллице должен остаться на экране авторизации",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Ввод в поле логин логин2",
+            "start": 1717189223937,
+            "stop": 1717189223937,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Ввод в поле пароль password2",
+            "start": 1717189223959,
+            "stop": 1717189223959,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажатие на кнопку ВОЙТИ",
+            "start": 1717189223977,
+            "stop": 1717189223977,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверка видимости элемента с текстом 'Authorization'",
+            "start": 1717189224263,
+            "stop": 1717189224263,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверка отображения toast с текстом ошибки Something went wrong. Try again later.",
+            "start": 1717189224265,
+            "stop": 1717189224265,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "2a3350d2-2e71-4c0f-94a6-755a8bd2ac82",
+    "historyId": "a34a64bd210cbfa8ef7f0e4712705ae3",
+    "fullName": "ru.iteco.fmhandroid.ui.AuthTest.testShouldRemainOnTheMainScreenWhenEnteringInTheLoginFieldCharactersInCyrillic",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.AuthTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "testShouldRemainOnTheMainScreenWhenEnteringInTheLoginFieldCharactersInCyrillic"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.AuthTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(1138)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "epic",
+            "value": "Авторизация"
+        },
+        {
+            "name": "feature",
+            "value": "Авторизация при введении в поле логин символов на кириллице"
+        },
+        {
+            "name": "severity",
+            "value": "normal"
+        }
+    ]
+}

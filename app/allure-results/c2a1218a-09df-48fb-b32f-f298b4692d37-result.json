@@ -1,0 +1,161 @@
+{
+    "name": "testShouldRemainOnTheMainScreenWhenEnteringInThePasswordField50Characters",
+    "start": 1717189215370,
+    "stop": 1717189220633,
+    "stage": "finished",
+    "description": "После авторизации с введением в поле пароль  50 символов должен остаться на экране авторизации",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Выход из профиля",
+            "start": 1717189219296,
+            "stop": 1717189219296,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Ввод в поле логин login2",
+            "start": 1717189219967,
+            "stop": 1717189219967,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Ввод в поле пароль loginloginloginloginloginloginloginloginloginlogin",
+            "start": 1717189219989,
+            "stop": 1717189219989,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажатие на кнопку ВОЙТИ",
+            "start": 1717189220019,
+            "stop": 1717189220019,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверка видимости элемента с текстом 'Authorization'",
+            "start": 1717189220375,
+            "stop": 1717189220375,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверка отображения toast с текстом ошибки Something went wrong. Try again later.",
+            "start": 1717189220377,
+            "stop": 1717189220377,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "c2a1218a-09df-48fb-b32f-f298b4692d37",
+    "historyId": "4daf1984003fd178b26dacb02930be77",
+    "fullName": "ru.iteco.fmhandroid.ui.AuthTest.testShouldRemainOnTheMainScreenWhenEnteringInThePasswordField50Characters",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.AuthTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "testShouldRemainOnTheMainScreenWhenEnteringInThePasswordField50Characters"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.AuthTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(1138)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "epic",
+            "value": "Авторизация"
+        },
+        {
+            "name": "feature",
+            "value": " Авторизация при введении в поле пароль 50 символов"
+        },
+        {
+            "name": "severity",
+            "value": "normal"
+        }
+    ]
+}

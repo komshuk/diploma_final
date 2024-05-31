@@ -1,0 +1,97 @@
+{
+    "name": "testShouldLogInAndShowTheMainScreenAndLogOut",
+    "start": 1717185267482,
+    "stop": 1717185271678,
+    "stage": "finished",
+    "description": "После авторизации с валидными данными должен показаться главный экран, после выхода из профиля - экран авторизации",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Ввод в поле пароль {password}",
+            "start": 1717185270920,
+            "stop": 1717185270920,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверка видимости элемента с текстом Новости",
+            "start": 1717185271325,
+            "stop": 1717185271325,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "355148c0-d9c7-457f-b660-9aae8a9ce63b",
+    "historyId": "cb53b95c48df73d794956c7a436103e2",
+    "fullName": "ru.iteco.fmhandroid.ui.AuthTest.testShouldLogInAndShowTheMainScreenAndLogOut",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.AuthTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "testShouldLogInAndShowTheMainScreenAndLogOut"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.AuthTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(767)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "epic",
+            "value": "Авторизация"
+        },
+        {
+            "name": "feature",
+            "value": "Успешная авторизация в приложении и выход из профиля"
+        },
+        {
+            "name": "severity",
+            "value": "blocker"
+        }
+    ]
+}

@@ -154,7 +154,6 @@ public class NewsTest extends BasePage {
         controlPanelNews.addNews();
         onView(isRoot()).perform(waitDisplayed(createNews.getButtonSave(), 5000));
         createNews.pressSave();
-        SystemClock.sleep(1000);
         createNews.checkErrorDisplayed(FILL_EMPTY_FIELDS, decorView);
 
     }
@@ -180,7 +179,6 @@ public class NewsTest extends BasePage {
         editNews.editTime(EDIT_TIME);
         editNews.editDescription(EDIT_DESCRIPTION);
         editNews.pressSave();
-        SystemClock.sleep(1000);
         controlPanelNews.searchNewsAndCheckIsDisplayed(editTitle);
 
     }

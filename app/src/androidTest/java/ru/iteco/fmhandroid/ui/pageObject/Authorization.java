@@ -40,8 +40,8 @@ public class Authorization extends BasePage {
     private final ViewInteraction materialButton = onView(withId(R.id.enter_button));
     private final ViewInteraction textViewAuth = onView(withText("Authorization"));
 
-    @Step("Ввод в поле логин {login}")
     public void inputLogin(String login) {
+        Allure.step("Ввод в поле логин " + login);
         ViewInteraction textInputEditText = onView(allOf(
                 isDescendantOfA(withId(inputLogin)),
                 isAssignableFrom(EditText.class)));
@@ -50,9 +50,8 @@ public class Authorization extends BasePage {
 
     }
 
-    @Step("Ввод в поле пароль {password}")
     public void inputPassword(String password) {
-        Allure.step("Ввод в поле пароль {password}");
+        Allure.step("Ввод в поле пароль " + password);
         ViewInteraction textInputEditText3 = onView(allOf(
                 isDescendantOfA(withId(inputPassword)),
                 isAssignableFrom(EditText.class)));
@@ -60,14 +59,14 @@ public class Authorization extends BasePage {
         textInputEditText3.perform(replaceText(password), closeSoftKeyboard());
     }
 
-    @Step("Нажатие на кнопку ВОЙТИ")
     public void pressButton() {
+        Allure.step("Нажатие на кнопку ВОЙТИ");
         materialButton.check(matches(isDisplayed()));
         materialButton.perform(click());
     }
 
-    @Step("Успешная авторизация пользователя")
     public void loginSuccessful() {
+        Allure.step("Успешная авторизация пользователя");
         inputLogin("login2");
         inputPassword("password2");
         pressButton();
@@ -75,18 +74,17 @@ public class Authorization extends BasePage {
         main.checkNews();
     }
 
-    @Step("Проверка видимости элемента с текстом Authorization")
     public void checkAuth() {
+        Allure.step("Проверка видимости элемента с текстом 'Authorization'");
         textViewAuth.check(matches(isDisplayed()));
         textViewAuth.check(matches(withText("Authorization")));
     }
 
-    @Step("Проверка отображения toast с текстом ошибки {text}")
     public void checkToastWithErrorMessage(String errorText, View decorView) {
+        Allure.step("Проверка отображения toast с текстом ошибки " + errorText);
         onView(withText(errorText))
                 .inRoot(withDecorView(not(decorView)))
                 .check(matches(isDisplayed()));
-
     }
 
 }

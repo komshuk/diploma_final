@@ -1,0 +1,69 @@
+{
+    "name": "testShouldOpenPrivacyPolicy",
+    "start": 1717185212597,
+    "stop": 1717185217581,
+    "stage": "finished",
+    "description": "Должна открыться политика конфиденциальности",
+    "descriptionHtml": null,
+    "status": "failed",
+    "statusDetails": {
+        "message": "Wanted to match 1 intents. Actually matched 0 intents.\n\nIntentMatcher: has data: is <https://vhospice.org/#/privacy-policy>\n\nMatched intents:[]\n\nRecorded intents:\n-Intent { act=android.intent.action.VIEW dat=https://vhospice.org/... (has extras) } handling packages:[[com.android.chrome]], extras:[Bundle[{com.android.browser.application_id=ru.iteco.fmhandroid}]])",
+        "trace": "junit.framework.AssertionFailedError: Wanted to match 1 intents. Actually matched 0 intents.\n\nIntentMatcher: has data: is <https://vhospice.org/#/privacy-policy>\n\nMatched intents:[]\n\nRecorded intents:\n-Intent { act=android.intent.action.VIEW dat=https://vhospice.org/... (has extras) } handling packages:[[com.android.chrome]], extras:[Bundle[{com.android.browser.application_id=ru.iteco.fmhandroid}]])\n\tat junit.framework.Assert.fail(Assert.java:50)\n\tat androidx.test.espresso.intent.VerificationModes$Times.verify(VerificationModes.java:80)\n\tat androidx.test.espresso.intent.Intents.internalIntended(Intents.java:350)\n\tat androidx.test.espresso.intent.Intents$3.run(Intents.java:208)\n\tat androidx.test.espresso.intent.Intents$PropogatingRunnable.run(Intents.java:228)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat android.app.Instrumentation$SyncRunnable.run(Instrumentation.java:2207)\n\tat android.os.Handler.handleCallback(Handler.java:883)\n\tat android.os.Handler.dispatchMessage(Handler.java:100)\n\tat android.os.Looper.loop(Looper.java:214)\n\tat android.app.ActivityThread.main(ActivityThread.java:7356)\n\tat java.lang.reflect.Method.invoke(Native Method)\n\tat com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)\n\tat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)\n"
+    },
+    "steps": [
+    ],
+    "attachments": [
+        {
+            "source": "263164a8-a534-4931-abbb-919038d126ab-attachment.png",
+            "name": "1717185212598",
+            "type": "image/png"
+        }
+    ],
+    "parameters": [
+    ],
+    "uuid": "d7e6f916-c906-4b05-b012-1c031b880181",
+    "historyId": "38089f1d2a0baeee8fd5ebb51c784ab4",
+    "fullName": "ru.iteco.fmhandroid.ui.AboutAppTest.testShouldOpenPrivacyPolicy",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.AboutAppTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "testShouldOpenPrivacyPolicy"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.AboutAppTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(767)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "epic",
+            "value": "О приложении"
+        },
+        {
+            "name": "feature",
+            "value": "Просмотр политики конфиденциальности"
+        }
+    ]
+}

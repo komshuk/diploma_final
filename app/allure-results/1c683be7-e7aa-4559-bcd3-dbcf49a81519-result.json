@@ -1,0 +1,145 @@
+{
+    "name": "testShouldRemainOnTheMainScreenWhenEnteringInTheLoginFieldSpecialCharacters",
+    "start": 1717189203786,
+    "stop": 1717189207613,
+    "stage": "finished",
+    "description": "После авторизации с введением в поле логин спецсимволов должен остаться на экране авторизации",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Ввод в поле логин lOGin #%@`<|&?>*",
+            "start": 1717189207075,
+            "stop": 1717189207075,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Ввод в поле пароль password2",
+            "start": 1717189207087,
+            "stop": 1717189207087,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажатие на кнопку ВОЙТИ",
+            "start": 1717189207100,
+            "stop": 1717189207100,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверка видимости элемента с текстом 'Authorization'",
+            "start": 1717189207376,
+            "stop": 1717189207376,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверка отображения toast с текстом ошибки Something went wrong. Try again later.",
+            "start": 1717189207378,
+            "stop": 1717189207378,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "1c683be7-e7aa-4559-bcd3-dbcf49a81519",
+    "historyId": "a44b658be863f5e8066fa3095549e894",
+    "fullName": "ru.iteco.fmhandroid.ui.AuthTest.testShouldRemainOnTheMainScreenWhenEnteringInTheLoginFieldSpecialCharacters",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.AuthTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "testShouldRemainOnTheMainScreenWhenEnteringInTheLoginFieldSpecialCharacters"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.AuthTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(1138)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "epic",
+            "value": "Авторизация"
+        },
+        {
+            "name": "feature",
+            "value": "Авторизация при введении в поле логин спецсимволов"
+        },
+        {
+            "name": "severity",
+            "value": "normal"
+        }
+    ]
+}

@@ -33,7 +33,6 @@ public class Main {
         }
     }
 
-    @Step("Проверка видимости элемента с текстом Новости")
     public void checkNews() {
         Allure.step("Проверка видимости элемента с текстом Новости");
         textViewMainNews.check(matches(isDisplayed()));

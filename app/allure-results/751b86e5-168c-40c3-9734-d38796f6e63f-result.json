@@ -1,0 +1,81 @@
+{
+    "name": "testShouldRemainOnTheMainScreenWhenEnteringInTheLoginFieldOneCharacter",
+    "start": 1717185254573,
+    "stop": 1717185259029,
+    "stage": "finished",
+    "description": "После авторизации с введением в поле логин 1 символа должен остаться на экране авторизации",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Ввод в поле пароль {password}",
+            "start": 1717185258336,
+            "stop": 1717185258336,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "751b86e5-168c-40c3-9734-d38796f6e63f",
+    "historyId": "73c52179cb2f17bcb80b67b8e59fb09e",
+    "fullName": "ru.iteco.fmhandroid.ui.AuthTest.testShouldRemainOnTheMainScreenWhenEnteringInTheLoginFieldOneCharacter",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.AuthTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "testShouldRemainOnTheMainScreenWhenEnteringInTheLoginFieldOneCharacter"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.AuthTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(767)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "epic",
+            "value": "Авторизация"
+        },
+        {
+            "name": "feature",
+            "value": "Авторизация при введении в поле логин 1 символ"
+        },
+        {
+            "name": "severity",
+            "value": "normal"
+        }
+    ]
+}

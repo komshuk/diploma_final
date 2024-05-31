@@ -12,6 +12,7 @@ import static org.hamcrest.Matchers.allOf;
 import static ru.iteco.fmhandroid.ui.utils.Utils.waitDisplayed;
 import androidx.test.espresso.ViewInteraction;
 
+import io.qameta.allure.kotlin.Allure;
 import io.qameta.allure.kotlin.Step;
 import ru.iteco.fmhandroid.R;
 
@@ -49,8 +50,8 @@ public class AppBar {
 
     private final ViewInteraction buttonOurMission = onView(withId(R.id.our_mission_image_button));
 
-    @Step("Выход из профиля")
     public void pressOut() {
+        Allure.step("Выход из профиля");
         ViewInteraction buttonProfile = onView(withId(pressProfile));
         buttonProfile.check(matches(isDisplayed()));
         buttonProfile.perform(click());
@@ -59,8 +60,8 @@ public class AppBar {
         out.perform(click());
     }
 
-    @Step("Переход на экран Новости")
     public void switchToNews() {
+        Allure.step("Переход на экран Новости");
         buttonMainMenu.check(matches(isDisplayed()));
         buttonMainMenu.perform(click());
 
@@ -69,8 +70,8 @@ public class AppBar {
         onView(isRoot()).perform(waitDisplayed(news.getButtonControlPanelNews(), 5000));
     }
 
-    @Step("Переход на экран о приложении")
     public void switchToAboutApp() {
+        Allure.step("Переход на экран О приложении");
         buttonMainMenu.check(matches(isDisplayed()));
         buttonMainMenu.perform(click());
 
@@ -79,8 +80,8 @@ public class AppBar {
         onView(isRoot()).perform(waitDisplayed(aboutApp.getButtonBack(), 5000));
     }
 
-    @Step("Переход на экран Главное")
     public void switchToMain() {
+        Allure.step("Переход на главный экран");
         buttonMainMenu.check(matches(isDisplayed()));
         buttonMainMenu.perform(click());
 
@@ -89,8 +90,8 @@ public class AppBar {
         onView(isRoot()).perform(waitDisplayed(main.getContainerNews(), 5000));
     }
 
-    @Step("Переход на экран Тематические статьи")
     public void switchToOurMission() {
+        Allure.step("Переход на экран Тематические статьи");
         buttonOurMission.check(matches(isDisplayed()));
         buttonOurMission.perform(click());
         onView(isRoot()).perform(waitDisplayed(ourMission.getTextScreen(), 5000));

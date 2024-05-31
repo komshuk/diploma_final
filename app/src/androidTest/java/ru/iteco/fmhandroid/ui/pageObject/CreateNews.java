@@ -18,6 +18,8 @@ import static ru.iteco.fmhandroid.ui.utils.Utils.waitDisplayed;
 import android.view.View;
 
 import androidx.test.espresso.ViewInteraction;
+
+import io.qameta.allure.kotlin.Allure;
 import io.qameta.allure.kotlin.Step;
 import ru.iteco.fmhandroid.R;
 
@@ -36,39 +38,39 @@ public class CreateNews {
         return buttonSave;
     }
 
-    @Step("Ввод в поле категория {text}")
     public void addCategory(String text) {
+        Allure.step("Ввод текста в поле 'Категория' " + text);
         category.check(matches(isDisplayed()));
         category.perform(replaceText(text), closeSoftKeyboard());
     }
 
-    @Step("Ввод в поле заголовок {text}")
     public void addTitle(String text) {
+        Allure.step("Ввод текста в поле 'Заголовок' " + text);
         title.check(matches(isDisplayed()));
         title.perform(replaceText(text), closeSoftKeyboard());
     }
 
-    @Step("Ввод в поле дата {text}")
     public void addDate(String text) {
+        Allure.step("Ввод текста в поле 'Дата' " + text);
         date.check(matches(isDisplayed()));
         date.perform(replaceText(text), closeSoftKeyboard());
     }
 
-    @Step("Ввод в поле время {text}")
     public void addTime(String text) {
+        Allure.step("Ввод текста в поле 'Время' " + text);
         time.check(matches(isDisplayed()));
         time.perform(replaceText(text), closeSoftKeyboard());
 
     }
 
-    @Step("Ввод в поле описание {text}")
     public void addDescription(String text) {
+        Allure.step("Ввод текста в поле 'Описание' " + text);
         description.check(matches(isDisplayed()));
         description.perform(replaceText(text), closeSoftKeyboard());
     }
 
-    @Step("Нажатие на кнопку Сохранить")
     public void pressSave() {
+        Allure.step("Нажатие на кнопку Сохранить");
         closeSoftKeyboard();
         scrollTo();
         onView(isRoot()).perform(waitDisplayed(buttonSave, 10000));
@@ -78,6 +80,7 @@ public class CreateNews {
 
     @Step("Создание новости с полями: категория {category}, заголовок {title}, дата {date}, время {time}, описание {description}")
     public void createNewsItem(String category, String title, String date, String time, String description) {
+        Allure.step("Создание новости с полями: " + category + "," + title + "," + date + "," + time + "," + description);
         addCategory(category);
         addTitle(title);
         addDate(date);
@@ -87,14 +90,14 @@ public class CreateNews {
         pressSave();
     }
 
-    @Step("Проверка отображения иконок-информеров о пустых полях")
     public void checkErrorIconsDisplayed() {
+        Allure.step("Проверка отображения иконок-информеров о пустых полях");
         startLineErrorIcon.check(matches(isDisplayed()));
         endLineErrorIcon.check(matches(isDisplayed()));
     }
 
-    @Step("Проверка отображения ошибки {text}")
     public void checkErrorDisplayed(String errorText, View decorView) {
+        Allure.step("Проверка отображения текста ошибки: " + errorText );
         onView(withText(errorText))
                 .inRoot(withDecorView(not(decorView)))
                 .check(matches(isDisplayed()));

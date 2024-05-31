@@ -1,0 +1,97 @@
+{
+    "name": "testShouldOpenPageWithThematicArticles",
+    "start": 1717189165902,
+    "stop": 1717189169969,
+    "stage": "finished",
+    "description": "Должна открыться страница с тематическими статьями",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Переход на экран Тематические статьи",
+            "start": 1717189169300,
+            "stop": 1717189169300,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверка нахождения на экране Тематические статьи",
+            "start": 1717189169681,
+            "stop": 1717189169681,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "c982cc5d-1612-4797-84a4-3602dd7d7136",
+    "historyId": "2bd9424ac23d23f868f90133ab942e2d",
+    "fullName": "ru.iteco.fmhandroid.ui.ArticleTest.testShouldOpenPageWithThematicArticles",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.ArticleTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "testShouldOpenPageWithThematicArticles"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.ArticleTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(1138)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "epic",
+            "value": "Тематические статьи"
+        },
+        {
+            "name": "feature",
+            "value": "Просмотр тематических статей"
+        },
+        {
+            "name": "severity",
+            "value": "normal"
+        }
+    ]
+}

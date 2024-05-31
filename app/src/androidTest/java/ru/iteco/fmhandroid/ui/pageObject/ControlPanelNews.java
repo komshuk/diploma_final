@@ -17,6 +17,7 @@ import static ru.iteco.fmhandroid.ui.utils.Utils.waitDisplayed;
 
 import androidx.test.espresso.ViewInteraction;
 
+import io.qameta.allure.kotlin.Allure;
 import io.qameta.allure.kotlin.Step;
 import ru.iteco.fmhandroid.R;
 
@@ -34,29 +35,29 @@ public class ControlPanelNews {
     private final ViewInteraction buttonOk = onView(withId(android.R.id.button1));
     private final ViewInteraction openFilterNewsButton = onView(withId(R.id.filter_news_material_button));
 
-    @Step("Нажатие на кнопку Добавить новость")
     public void addNews() {
+        Allure.step("Нажатие на кнопку 'Добавить новость'");
         onView(withId(buttonAddNews)).check(matches(isDisplayed()));
         onView(withId(buttonAddNews)).perform(click());
         onView(isRoot()).perform(waitDisplayed(createNews.getButtonSave(), 6000));
     }
 
-    @Step("Нажатие на кнопку Редактирование новостей")
     public void pressEditPanelNews(String text) {
+        Allure.step("Нажатие на кнопку 'Редактирование новостей'");
         ViewInteraction edit = onView(allOf(withId(buttonEditNews), withContentDescription(text)));
         edit.check(matches(isDisplayed()));
         edit.perform(click());
         onView(isRoot()).perform(waitDisplayed(editNews.getButtonSave(), 6000));
     }
 
-    @Step("Открыть фильтр новостей по категории")
     public FilterNewsScreen filterNewsToFindItemToDelete() {
+        Allure.step("Открыть фильтр новостей по категории");
         openFilterNewsButton.perform(click());
         return new FilterNewsScreen();
     }
 
-    @Step("Нажатие на кнопку Удалить новость")
     public void deleteNews(String text) {
+        Allure.step("Нажатие на кнопку Удалить новость");
         ViewInteraction delete = onView(allOf(withId(buttonDeleteNews), withContentDescription(text)));
         delete.check(matches(isDisplayed()));
         delete.perform(click());
@@ -64,18 +65,18 @@ public class ControlPanelNews {
         buttonOk.perform(click());
     }
 
-    @Step("Поиск новости с заголовком {text} и проверка ее видимости")
     public void searchNewsAndCheckIsDisplayed(String text) {
+        Allure.step("Поиск новости с заголовком " + text + " и проверка ее видимости");
         onView(withText(text)).check(matches(isDisplayed()));
     }
 
-    @Step("Поиск новости с заголовком {text} и проверка ее отсутствия")
     public void searchNewsAndCheckIsNotDisplayed(String text) {
+        Allure.step("Поиск новости с заголовком " + text + " и проверка ее отсутствия");
         onView(withText(text)).check(matches(not((isDisplayed()))));
     }
 
-    @Step("Отсортировать новости по дате создания")
     public void sortNewsList() {
+        Allure.step("Сортировка новостей по дате создания");
         onView(withId(sortNewsButton)).check(matches(isDisplayed()));
         onView(withId(sortNewsButton)).perform(click());
     }
