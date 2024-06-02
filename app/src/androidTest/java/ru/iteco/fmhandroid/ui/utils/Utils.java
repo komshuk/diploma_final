@@ -62,10 +62,8 @@ public class Utils {
     }
 
     public String currentDate() {
-        String currentDate =  Integer.toString(LocalDate.now().getDayOfMonth()) + '.' +
-                LocalDate.now().format(DateTimeFormatter.ofPattern("MM"))
-                + '.' + Integer.toString(LocalDate.now().getYear());
-        return currentDate;
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+        return LocalDate.now().format(formatter);
     }
 
     public String dateMore5Year() {

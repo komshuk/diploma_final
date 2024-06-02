@@ -5,17 +5,26 @@ import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.action.ViewActions.closeSoftKeyboard;
 import static androidx.test.espresso.action.ViewActions.replaceText;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
+import static androidx.test.espresso.matcher.ViewMatchers.hasSibling;
+import static androidx.test.espresso.matcher.ViewMatchers.isDescendantOfA;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.isRoot;
 import static androidx.test.espresso.matcher.ViewMatchers.withContentDescription;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
+import static org.hamcrest.Matchers.instanceOf;
 import static org.hamcrest.Matchers.not;
 
 import static ru.iteco.fmhandroid.ui.utils.Utils.waitDisplayed;
 
+import android.view.View;
+
 import androidx.test.espresso.ViewInteraction;
+
+import com.google.android.material.textview.MaterialTextView;
+
+import org.hamcrest.Matcher;
 
 import io.qameta.allure.kotlin.Allure;
 import io.qameta.allure.kotlin.Step;
@@ -29,9 +38,9 @@ public class ControlPanelNews {
         return buttonAddNews;
     }
     private int buttonEditNews = R.id.edit_news_item_image_view;
+    private static Matcher<View> editNewsButton = withId(R.id.edit_news_item_image_view);
     private final int sortNewsButton = R.id.sort_news_material_button;
     private final int buttonDeleteNews = R.id.delete_news_item_image_view;
-    private final ViewInteraction newsItemTitle = onView(withId(R.id.news_item_title_text_view));
     private final ViewInteraction buttonOk = onView(withId(android.R.id.button1));
     private final ViewInteraction openFilterNewsButton = onView(withId(R.id.filter_news_material_button));
 
@@ -44,9 +53,9 @@ public class ControlPanelNews {
 
     public void pressEditPanelNews(String text) {
         Allure.step("Нажатие на кнопку 'Редактирование новостей'");
-        ViewInteraction edit = onView(allOf(withId(buttonEditNews), withContentDescription(text)));
-        edit.check(matches(isDisplayed()));
-        edit.perform(click());
+
+        onView(allOf(ControlPanelNews.editNewsButton, hasSibling(withText(text)))).perform(click());
+
         onView(isRoot()).perform(waitDisplayed(editNews.getButtonSave(), 6000));
     }
 

@@ -166,21 +166,20 @@ public class NewsTest extends BasePage {
     public void testShouldEditTheNewsAfterEditing() {
         appBar.switchToNews();
         news.switchControlPanelNews();
-        controlPanelNews.addNews();
-        String title = "Создание новости" + Math.random();
+        String title = "Initial News Title" + Math.random();
 
+        controlPanelNews.addNews();
         createNews.createNewsItem(CATEGORY, title, utils.currentDate(), TIME, DESCRIPTION);
-        controlPanelNews.searchNewsAndCheckIsDisplayed(title);
+        controlPanelNews.sortNewsList();
         controlPanelNews.pressEditPanelNews(title);
+
+        String editTitle = "Edited News Title" + Math.random();
         editNews.editCategory(EDIT_CATEGORY);
-        String editTitle = "Редактирование" + Math.random();
         editNews.editTitle(editTitle);
-        editNews.editDate(utils.dateMore1Month());
-        editNews.editTime(EDIT_TIME);
         editNews.editDescription(EDIT_DESCRIPTION);
         editNews.pressSave();
-        controlPanelNews.searchNewsAndCheckIsDisplayed(editTitle);
 
+        controlPanelNews.searchNewsAndCheckIsDisplayed(editTitle);
     }
 
     @Severity(value = SeverityLevel.NORMAL)
