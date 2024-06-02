@@ -1,0 +1,145 @@
+{
+    "name": "testShouldStayOnNewsCreationScreenWhenCreatingNewsWithEmptyFields",
+    "start": 1717191190304,
+    "stop": 1717191196485,
+    "stage": "finished",
+    "description": "При создании новости c пустыми полями должны появляться иконки с ошибкой и toast c текстом",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Переход на экран Новости",
+            "start": 1717191193605,
+            "stop": 1717191193606,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Переход на 'Панель управления новостями'",
+            "start": 1717191194667,
+            "stop": 1717191194667,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажатие на кнопку 'Добавить новость'",
+            "start": 1717191195124,
+            "stop": 1717191195124,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажатие на кнопку Сохранить",
+            "start": 1717191195643,
+            "stop": 1717191195644,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверка отображения текста ошибки: Fill empty fields",
+            "start": 1717191196172,
+            "stop": 1717191196172,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "0313b202-aa70-41cb-a05b-ce6070c5f7ff",
+    "historyId": "32761721fe36ec964d459ebda3ece755",
+    "fullName": "ru.iteco.fmhandroid.ui.NewsTest.testShouldStayOnNewsCreationScreenWhenCreatingNewsWithEmptyFields",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.NewsTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "testShouldStayOnNewsCreationScreenWhenCreatingNewsWithEmptyFields"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.NewsTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(1368)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "epic",
+            "value": "Новости"
+        },
+        {
+            "name": "feature",
+            "value": "Создание новости с пустыми полями"
+        },
+        {
+            "name": "severity",
+            "value": "critical"
+        }
+    ]
+}

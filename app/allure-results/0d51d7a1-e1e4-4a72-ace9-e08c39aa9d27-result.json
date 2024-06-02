@@ -1,0 +1,238 @@
+{
+    "name": "testShouldEditTheNewsAfterEditing",
+    "start": 1717358903197,
+    "stop": 1717358924338,
+    "stage": "finished",
+    "description": "После редактирования новость должна отредактироваться, проверяем изменение темы",
+    "descriptionHtml": null,
+    "status": "broken",
+    "statusDetails": {
+        "message": "Error performing 'single click - At Coordinates: 539, 1539 and precision: 16, 16' on view 'Animations or transitions are enabled on the target device.\nFor more info check: https://developer.android.com/training/testing/espresso/setup#set-up-environment\n\nview.getId() is <2131231198/ru.iteco.fmhandroid:id/save_button>'.",
+        "trace": "androidx.test.espresso.PerformException: Error performing 'single click - At Coordinates: 539, 1539 and precision: 16, 16' on view 'Animations or transitions are enabled on the target device.\nFor more info check: https://developer.android.com/training/testing/espresso/setup#set-up-environment\n\nview.getId() is <2131231198/ru.iteco.fmhandroid:id/save_button>'.\n\tat androidx.test.espresso.PerformException$Builder.build(PerformException.java:1)\n\tat androidx.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:9)\n\tat androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:7)\n\tat androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:8)\n\tat androidx.test.espresso.ViewInteraction.desugaredPerform(ViewInteraction.java:11)\n\tat androidx.test.espresso.ViewInteraction.perform(ViewInteraction.java:4)\n\tat ru.iteco.fmhandroid.ui.pageObject.CreateNews.pressSave(CreateNews.java:78)\n\tat ru.iteco.fmhandroid.ui.pageObject.CreateNews.createNewsItem(CreateNews.java:90)\n\tat ru.iteco.fmhandroid.ui.NewsTest.testShouldEditTheNewsAfterEditing(NewsTest.java:172)\n\tat java.lang.reflect.Method.invoke(Native Method)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat androidx.test.internal.runner.junit4.statement.RunBefores.evaluate(RunBefores.java:80)\n\tat org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)\n\tat io.qameta.allure.android.rules.ScreenshotRule$apply$1.evaluate(ScreenshotRule.kt:22)\n\tat io.qameta.allure.android.rules.ScreenshotRule$apply$1.evaluate(ScreenshotRule.kt:22)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:162)\n\tat io.qameta.allure.android.runners.AllureAndroidJUnit4.run(AllureAndroidJUnitRunners.kt:29)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:115)\n\tat androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:67)\n\tat androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:58)\n\tat androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:446)\n\tat android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2189)\nCaused by: java.time.format.DateTimeParseException: Text '2.06.2024' could not be parsed at index 0\n\tat java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:1949)\n\tat java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1851)\n\tat java.time.LocalDate.parse(LocalDate.java:394)\n\tat ru.iteco.fmhandroid.utils.Utils.saveDateTime(Utils.kt:60)\n\tat ru.iteco.fmhandroid.ui.CreateEditNewsFragment.fillNewsItem(CreateEditNewsFragment.kt:300)\n\tat ru.iteco.fmhandroid.ui.CreateEditNewsFragment.onViewCreated$lambda-10$lambda-9(CreateEditNewsFragment.kt:161)\n\tat ru.iteco.fmhandroid.ui.CreateEditNewsFragment.$r8$lambda$_gJf-Pn0dKOq75z97PoS9ie76KA(Unknown Source:0)\n\tat ru.iteco.fmhandroid.ui.CreateEditNewsFragment$$ExternalSyntheticLambda5.onClick(Unknown Source:4)\n\tat android.view.View.performClick(View.java:7125)\n\tat com.google.android.material.button.MaterialButton.performClick(MaterialButton.java:1131)\n\tat android.view.View.performClickInternal(View.java:7102)\n\tat android.view.View.access$3500(View.java:801)\n\tat android.view.View$PerformClick.run(View.java:27336)\n\tat android.os.Handler.handleCallback(Handler.java:883)\n\tat android.os.Handler.dispatchMessage(Handler.java:100)\n\tat androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:14)\n\tat androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:8)\n\tat androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:1)\n\tat androidx.test.espresso.base.UiControllerImpl.injectMotionEvent(UiControllerImpl.java:6)\n\tat androidx.test.espresso.action.MotionEvents.sendUp(MotionEvents.java:7)\n\tat androidx.test.espresso.action.MotionEvents.sendUp(MotionEvents.java:1)\n\tat androidx.test.espresso.action.Tap.sendSingleTap(Tap.java:5)\n\tat androidx.test.espresso.action.Tap.access$100(Tap.java:1)\n\tat androidx.test.espresso.action.Tap$1.sendTap(Tap.java:3)\n\tat androidx.test.espresso.action.GeneralClickAction.perform(GeneralClickAction.java:6)\n\tat androidx.test.espresso.ViewInteraction$SingleExecutionViewAction.perform(ViewInteraction.java:2)\n\tat androidx.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:22)\n\tat androidx.test.espresso.ViewInteraction.access$100(ViewInteraction.java:1)\n\tat androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:2)\n\tat androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:1)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat android.os.Handler.handleCallback(Handler.java:883)\n\tat android.os.Handler.dispatchMessage(Handler.java:100)\n\tat android.os.Looper.loop(Looper.java:214)\n\tat android.app.ActivityThread.main(ActivityThread.java:7356)\n\tat java.lang.reflect.Method.invoke(Native Method)\n\tat com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)\n\tat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)\n"
+    },
+    "steps": [
+        {
+            "name": "Переход на экран Новости",
+            "start": 1717358909159,
+            "stop": 1717358909159,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Переход на 'Панель управления новостями'",
+            "start": 1717358910512,
+            "stop": 1717358910513,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажатие на кнопку 'Добавить новость'",
+            "start": 1717358911400,
+            "stop": 1717358911400,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Создание новости с полями: День рождения,Initial News Title,2.06.2024,12:00,тест",
+            "start": 1717358916299,
+            "stop": 1717358916299,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Ввод текста в поле 'Категория' День рождения",
+            "start": 1717358917272,
+            "stop": 1717358917272,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Ввод текста в поле 'Заголовок' Initial News Title",
+            "start": 1717358918129,
+            "stop": 1717358918129,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Ввод текста в поле 'Дата' 2.06.2024",
+            "start": 1717358918917,
+            "stop": 1717358918917,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Ввод текста в поле 'Время' 12:00",
+            "start": 1717358920453,
+            "stop": 1717358920453,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Ввод текста в поле 'Описание' тест",
+            "start": 1717358921155,
+            "stop": 1717358921155,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажатие на кнопку Сохранить",
+            "start": 1717358922842,
+            "stop": 1717358922842,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+        {
+            "source": "c17dbb0b-6837-4b85-b756-67923c13f8bd-attachment.png",
+            "name": "1717358903285",
+            "type": "image/png"
+        },
+        {
+            "source": "92d240c6-020b-4279-ae6d-05337386fac3-attachment.png",
+            "name": "failure",
+            "type": "image/png"
+        }
+    ],
+    "parameters": [
+    ],
+    "uuid": "0d51d7a1-e1e4-4a72-ace9-e08c39aa9d27",
+    "historyId": "802ea880323cc7c8136d0c34ba9c7a03",
+    "fullName": "ru.iteco.fmhandroid.ui.NewsTest.testShouldEditTheNewsAfterEditing",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.NewsTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "testShouldEditTheNewsAfterEditing"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.NewsTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(926)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "epic",
+            "value": "Новости"
+        },
+        {
+            "name": "feature",
+            "value": "Редактирование новости"
+        },
+        {
+            "name": "severity",
+            "value": "normal"
+        }
+    ]
+}
